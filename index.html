@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Detection</title>
+  <style>
+    body {
+      background-color: #e1f4ff;
+      color: #333;
+      font-family: Arial, sans-serif;
+     height: 100%;
+     background-image: url("https://images.pexels.com/photos/147635/pexels-photo-147635.jpeg?auto=compress&cs=tinysrgb&w=800");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-color: #e1f4ff;
+     color: #333;
+     font-family: Arial, sans-serif;
+     height: 100%;
+     padding: 100px;
+    }
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .form-container form {
+      margin-right: 20px;
+    }
+    h2{
+        color: antiquewhite;
+    }
+    input[type="file"], input[type="text"], input[type="submit"] {
+      margin: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .explanation {
+      background-color: #7b92ed;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Face Detection</h1>
+
+  <div class="form-container">
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <h2>Upload File 1</h2>
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <br>
+      <input type="submit" value="Upload">
+    </form>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <h2>Upload File 2</h2>
+      <input type="file" name="fileToUpload2" id="fileToUpload2">
+      <br>
+      <input type="submit" value="Upload">
+    </form>
+  </div>
+
+  <div class="explanation">
+    <h2>Face Detection</h2>
+    <p>
+      Face detection is a computer vision technique used to identify and locate human faces within images or videos. It involves analyzing the visual data to determine the presence and position of faces.
+    </p>
+    <p>
+      The detection process typically involves identifying facial features such as eyes, nose, and mouth, and using algorithms to differentiate between faces and other objects in the scene. Face detection has various applications, including facial recognition, emotion analysis, and image processing.
+    </p>
+  </div>
+
+</body>
+</html>
